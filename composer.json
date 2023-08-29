@@ -1,0 +1,14 @@
+{
+    "name": "wangzhiben/test",
+    "autoload": {
+        "psr-4": {
+            "Wangzhiben\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wzb"
+        }
+    ],
+    "require": {}
+}
