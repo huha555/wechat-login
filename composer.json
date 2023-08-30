@@ -1,14 +1,23 @@
 {
-    "name": "wangzhiben/test",
+    "name": "wzb/wechat-login",
     "autoload": {
         "psr-4": {
-            "Wangzhiben\\Test\\": "src/"
+            "Wzb\\WechatLogin\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "wzb"
+            "name": "huha555",
+            "email": "1462831624@qq.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wzb\\WechatLogin\\WechatLoginServiceProvider"
+            ]
+        }
+    },
+    "license": "MIT"
 }

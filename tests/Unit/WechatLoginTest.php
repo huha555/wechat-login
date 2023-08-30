@@ -3,7 +3,7 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
-use Vendor\wzb\WechatLoginService;
+use Wzb\WechatLogin\Services\WechatLoginService;
 
 class WechatLoginTest extends TestCase
 {
@@ -19,37 +19,8 @@ class WechatLoginTest extends TestCase
 
     public function testCreate()
     {
-        $res =  new WechatLoginService();
+        $res =  (new WechatLoginService)->login(123);
         dd($res);
     }
 
-    public function testUpdate()
-    {
-        $data = [
-            'permission_id' => 32,
-            'name' => 'el.b',
-        ];
-        $result = $this->postJson('/permission/update', $data)->json();
-        dd($result);
-    }
-
-    public function testDelete()
-    {
-        $data = [
-            'name' => 'el.b',
-        ];
-        $result = $this->postJson('/permission/delete', $data)->json();
-        dd($result);
-    }
-
-    public function testTranslate()
-    {
-        $data = [
-            'name' => 'el.a',
-            'lang' => 'en',
-            'content' => 'aa'
-        ];
-        $result = $this->postJson('/permission/translate', $data)->json();
-        dd($result);
-    }
 }
