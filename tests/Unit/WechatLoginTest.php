@@ -19,7 +19,7 @@ class WechatLoginTest extends TestCase
 
     public function testCreate()
     {
-        $res =  (new WechatLoginService)->login(123);
+        $res =  (new WechatLoginService)->login('0b32Rq0w3Rilg13Vzi0w3L98Mr12Rq0E');
         dd($res);
     }
 

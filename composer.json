@@ -14,9 +14,9 @@
     "require": {},
     "extra": {
         "laravel": {
-            "providers": [
-                "Wzb\\WechatLogin\\WechatLoginServiceProvider"
-            ]
+            "aliases": {
+                "ExceptionFactory": "Wzb\\Wechatlogin\\Exception\\ExceptionFactoryFacade"
+            }
         }
     },
     "license": "MIT"
