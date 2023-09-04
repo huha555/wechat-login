@@ -6,8 +6,11 @@ namespace Wzb\WechatLogin\Services;
 class WechatLoginService
 {
     public function login($code)
-    {
-        // 小程序的 appid 和 secret
+  {		    
+
+
+
+       // 小程序的 appid 和 secret
         $appId = config('login.app_id');
         $secret =config('login.secret');
 
